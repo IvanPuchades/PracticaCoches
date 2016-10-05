@@ -32,8 +32,11 @@ public class RegistroVehiculos {
     }
 
     public List<Coche> obtenerVehiculosMarca(String marca) {
+
+        return (List<Coche>) coches.stream().filter(coche -> coche.getMarca().equalsIgnoreCase(marca));
     }
 
     public List<Coche> obtenerTodos() {
+        return (List<Coche>) coches;
     }
 }
