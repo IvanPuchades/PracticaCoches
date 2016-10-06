@@ -10,11 +10,16 @@ public class Taller {
             new TreeMap<>(Comparator.comparing(Persona::getNumSeguridadSocial));
 
     public Coche registrarReparacion(Persona persona, Coche coche){
+
+        
+
     }
 
     public Coche obtenerCoche(Persona persona){
+
     }
 
     public Set<Persona> obtenerClientes(){
+
     }
 }
