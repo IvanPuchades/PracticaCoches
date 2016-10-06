@@ -27,16 +27,19 @@ public class RegistroVehiculos {
 
     public Optional<Coche> obtenerVehiculoPrecioMax() {
 
-        return coches.stream().filter(coche -> coche.getPrecio() = max);
+        return coches.stream().max(Comparator.comparing(Coche::getPrecio));
 
     }
 
     public List<Coche> obtenerVehiculosMarca(String marca) {
 
-        return (List<Coche>) coches.stream().filter(coche -> coche.getMarca().equalsIgnoreCase(marca));
+        return coches.stream()
+                .filter(coche -> coche.getMarca().equalsIgnoreCase(marca))
+                .collect(Collectors.toList());
     }
 
-    public List<Coche> obtenerTodos() {
-        return (List<Coche>) coches;
+    public Set<Coche> obtenerTodos() {
+
+        return coches;
     }
 }
