@@ -107,6 +107,6 @@ public class Persona {
                 ", apellidos='" + apellidos + '\'' +
                 ", edad=" + edad +
                 ", salario=" + salario +
-                '}';
+                '}'+ System.lineSeparator();
     }
 }
