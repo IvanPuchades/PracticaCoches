@@ -110,4 +110,3 @@ public class Persona {
                 '}'+ System.lineSeparator();
     }
 }
-//Practica Acabada

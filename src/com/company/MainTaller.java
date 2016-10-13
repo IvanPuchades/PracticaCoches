@@ -26,4 +26,3 @@ public class MainTaller {
         System.out.println(taller.obtenerClientes());
     }
 }
-//Practica acabada
